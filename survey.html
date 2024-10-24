@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опитувальник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Опитувальник для учнів</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="survey.html">Опитувальник</a></li>
+                <li><a href="news.html">Новини</a></li>
+            </ul>
+        </nav>
+        <div class="circle"></div>
+        <div class="square"></div>
+    </header>
+
+    <main>
+        <section>
+            <h2>Ваша думка важлива!</h2>
+            <p>Будь ласка, заповніть цей опитувальник, щоб ми могли покращити наші курси.</p>
+            <form action="#">
+                <label for="name">Ваше ім'я:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="course">Який курс ви проходите:</label><br>
+                <input type="text" id="course" name="course" required><br><br>
+
+                <label for="rating">Оцініть курс (1-5):</label><br>
+                <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+                <label for="feedback">Ваші коментарі:</label><br>
+                <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+                <input type="submit" value="Відправити">
+            </form>
+            <div class="triangle"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Наша школа - краща</p>
+    </footer>
+</body>
+</html>
